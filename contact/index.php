@@ -27,61 +27,13 @@
    <body>
       <?php include($dir_inc."header.php"); ?>
       <div id="content">
-         <form action="index.php" method="post">
+         <form action="formcomplete.php" method="post">
             Leave a message for me here. Please fill in all fields<br><br>
             Your Name:<br><input type="text" name="name"><br><br>
             Your Email:<br><input type="text" name="email"><br><br>
             Your Messgae:<br><textarea name="message" cols="100" rows="5"></textarea><br><br>
             <input type="submit" value="Send" />
          </form>
-         <?php
-            $name  = "";
-            $email = "";
-            $msg   = "";
-            //form submitted
-            if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["message"])){
-               //add data to table
-               $name  = mysql_real_escape_string($_POST["name"]);
-               $email = mysql_real_escape_string($_POST["email"]);
-               $msg   = mysql_real_escape_string($_POST["message"]);
-               mysql_query("INSERT INTO messages 
-                  (name, email, msg) VALUES('".$name."', '".$email."', '".$msg."')") 
-                  or die(mysql_error());  
-               
-               //MAIL SENDING CODE
-               require_once "Mail.php";
-
-               $from = $email;
-               $to = "zakatk857@gmail.com";
-               $subject = "TEST";
-               $body = $msg;
-
-               $host = "ssl://smtp.gmail.com";
-               $port = "465";
-               $username = "zakatk857@gmail.com";
-               $password = "bUgaboo78";
-
-               $headers = array ('From' => $from,
-                  'To' => $to,
-                  'Subject' => $subject);
-               $smtp = Mail::factory('smtp',
-                  array (
-                     'host' => $host,
-                     'port' => $port,
-                     'auth' => true,
-                     'username' => $username,
-                     'password' => $password));
-
-               $mail = $smtp->send($to, $headers, $body);
-
-               if (PEAR::isError($mail)) {
-                  echo("<br>Message failed to send, try again.");
-               } else {
-                  echo("<br>Message successfully sent!");
-               }
-            }
-
-         ?>
       </div>
       <?php include($dir_inc."footer.php"); ?>
    </body>
