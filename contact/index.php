@@ -28,9 +28,8 @@
       <?php include($dir_inc."header.php"); ?>
       <div id="content">
          <form action="index.php" method="post">
-            If you want to get in contact, leave a message here and I might see it eventually:<br>
-            <textarea name="message" cols="100" rows="5">Leave a message here</textarea><br>
-            <input type="submit" value="save" />
+            <textarea name="message" cols="100" rows="5">Leave your message for me here. Don't forget to hit send!</textarea><br>
+            <input type="submit" value="Send" />
          </form>
          <?php
             //form submitted
