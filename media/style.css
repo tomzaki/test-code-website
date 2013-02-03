@@ -23,6 +23,13 @@ textarea
     background-color: #dddddd;
 }
 
+input
+{
+    border: none;
+    box-shadow: 0px 0px 8px #666666;
+    background-color: #dddddd;
+}
+
 #container
 {    
     position: fixed;

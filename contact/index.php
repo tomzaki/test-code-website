@@ -28,15 +28,21 @@
       <?php include($dir_inc."header.php"); ?>
       <div id="content">
          <form action="index.php" method="post">
-            <textarea name="message" cols="100" rows="5">Leave your message for me here. Don't forget to hit send!</textarea><br>
+            Leave a message for me here. Please fill in all fields<br><br>
+            Your Name:<br><input type="text" name="name"><br><br>
+            Your Email:<br><input type="text" name="email"><br><br>
+            Your Messgae:<br><textarea name="message" cols="100" rows="5"></textarea><br><br>
             <input type="submit" value="Send" />
          </form>
          <?php
             //form submitted
-            if(isset($_POST["message"])){
+            if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["message"])){
                //add data to table
+               $name  = mysql_real_escape_string($_POST["name"]);
+               $email = mysql_real_escape_string($_POST["email"]);
+               $msg   = mysql_real_escape_string($_POST["message"]);
                mysql_query("INSERT INTO messages 
-                  (msg) VALUES('".$_POST["message"]."')") 
+                  (name, email, msg) VALUES('".$name."', '".$email."', '".$msg."')") 
                   or die(mysql_error());  
                echo "<br>Message Sent<br>";
             }
