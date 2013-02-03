@@ -1,0 +1,3 @@
+Colors for website
+red      brown    orange   yellow
+993300	663300	CC6633	CC9966

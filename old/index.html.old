@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="media/style.css" type="text/css" media="screen">
+  </head>
+
+  <body>
+    <p>
+      <h1>Hello World.<br></h1>
+      <h3>Welcome to the landing page.<br>
+          Here you'll find links to lots of random stuff.</h3>
+    </p>
+
+    <p>
+      <a href="awesome/index.html">Awesome</a><br>
+      <a href="php_test/test.php">PHP Test</a><br>
+      <a href="php_test/form.php">PHP/MySQL Form Test</a><br>
+      <a href="phpmyadmin/index.php">PHPMyAdmin</a><br>
+    </p>
+
+    <p>
+      <h5><i>If you happened to stumble upon this site somehow,<br>
+          feel free to browse around. Fair warning though, there<br>
+          isn't much to see...</i></h5>
+    </p>
+  </body>
+
+</html>
