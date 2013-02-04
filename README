@@ -1,4 +1,4 @@
-Mucking around with web programming
+Mucking around with web programming: http://webserver.tomzaki.com
 
  - The vast majority of the code here was developed in about 3 days
    while I was teachimg myself the basics of web programming as
@@ -6,6 +6,8 @@ Mucking around with web programming
 
  - Test deployments of code I plan to use on other web pages will
    likely show up here first
-
- - When a more permanent URL (that is not my IP address) is
-   assigned to this page I'll add that here for reference
+   
+ - Currently working on some php based EE design tools. Check out
+   the php directory (or page if you're browsing the site) for
+   more details. If you happen to know whats causing the usort()
+   bug on the resistor gain tool page LET ME KNOW PLEASE :D
