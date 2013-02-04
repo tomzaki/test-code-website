@@ -116,8 +116,7 @@ table.bottomBorder th { border-bottom:2px solid black; padding:5px; }
 
 #content_right
 {
-    position: fixed;
-    clear: left;
+    position: absolute;
     width: 230px;
     top: 140px;
     bottom: 85px;
@@ -127,12 +126,11 @@ table.bottomBorder th { border-bottom:2px solid black; padding:5px; }
 #content_left
 {    
     overflow-y: scroll;
-    position: fixed;
-    clear: left;
+    position: absolute;
     width: 590px;
     top: 140px;
     bottom: 85px;
-    right: 180px;
+    right: 0px;
     padding: 20px;
 }
 

@@ -118,7 +118,7 @@
          
          echo("</table>");
       } else {
-         echo("No combinations meet a gain of <b><span style='color: #993300;'>".$gain."</span></b> within the specified threshold using <b><span style='color: #993300;'>".$tolerance."</span></b> resistors");
+         echo("No combinations meet a gain of <b><span style='color: #993300;'>".$gain*pow(10, $pow)."</span></b> within the specified threshold using <b><span style='color: #993300;'>".$tolerance."</span></b> resistors");
       }
    }
 ?>
