@@ -18,7 +18,7 @@
       <div id="content">
          <h2>There's nothing fancy here yet...</h2>
          <ul>
-            <li><a href="">Something Fancy</a></li>
+            <!--<li><a href="">Something Fancy</a></li>-->
          </ul>
       </div>
       <?php include($dir_inc."footer.php"); ?>

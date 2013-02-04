@@ -19,6 +19,8 @@
          <form onsubmit="argue()">
             <input type="submit" value="CLICK ME"> to save the princess!
          </form>
+         <br>
+         <a href="resistortool.php">Resistor Pair Calculator</a>
       </div>
       <?php include($dir_inc."footer.php"); ?>
    </body>

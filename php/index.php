@@ -20,6 +20,7 @@
             <li><a href="form.php">PHP Form</a></li>
             <li><a href="test.php">PHP Info</a></li>
             <li><a href="phpmyadmin/index.php">PHPMyAdmin</a></li>
+            <li><a href="resistorcalc.php">Resistor Gain Tool</a></li>
          </ul>
       </div>
       <?php include($dir_inc."footer.php"); ?>
