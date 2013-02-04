@@ -70,18 +70,20 @@
                   <colgroup>
                      <col span='1' style='width: 120px;'>
                      <col span='1' style='width: 120px;'>
+                     <col span='1' style='width: 120px;'>
                      <col span='1' style='width: 80px;'>
                      <col span='1' style='width: 80px;'>
                   </colgroup>
                   <tr>
                      <th style='text-align: left'>Gain</th>
+                     <th style='text-align: left'>(dB)</th>
                      <th style='text-align: left'>&Delta;</th>
                      <th style='text-align: left'>R1</th>
                      <th style='text-align: left'>R2</th>
                   </tr>");          
          foreach($good as $index => $ans){
             if($r1_high >= $ans[1] && $r1_low <= $ans[1]){
-               echo("<tr><td>".round($ans[0],4)."</td><td>".round(abs($gain*pow(10, $pow) - $ans[0]),4)."</td><td>".$ans[1]."</td><td>".$ans[2]."</td></tr>");
+               echo("<tr><td>".round($ans[0],4)."</td><td>".round(20*log($ans[0],10),4)."</td><td>".round(abs($gain*pow(10, $pow) - $ans[0]),4)."</td><td>".$ans[1]."</td><td>".$ans[2]."</td></tr>");
             }
          }
          
