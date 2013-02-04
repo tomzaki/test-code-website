@@ -114,6 +114,28 @@ table.bottomBorder th { border-bottom:2px solid black; padding:5px; }
     padding: 20px;
 }
 
+#content_right
+{
+    position: fixed;
+    clear: left;
+    width: 230px;
+    top: 140px;
+    bottom: 85px;
+    padding: 20px;
+}
+
+#content_left
+{    
+    overflow-y: scroll;
+    position: fixed;
+    clear: left;
+    width: 590px;
+    top: 140px;
+    bottom: 85px;
+    right: 180px;
+    padding: 20px;
+}
+
 #content h2
 {
     color:#000;
