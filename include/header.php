@@ -67,18 +67,6 @@
          ?> href="/~webserver/mysql/index.php">MySQL</a></li>
          <li><a 
          <?php
-            if(strpos($_SERVER['REQUEST_URI'], "/~webserver/fancy/") !== false)
-               echo " style='
-                display: block;
-                float: left;
-                padding: 5px 25px;
-                text-decoration: none;
-                border-left: 5px solid#004488; /*dark gray*/
-                color:#333333; 
-                background:#dddddd;'";
-         ?> href="/~webserver/fancy/index.php">Fancy</a></li>
-         <li><a 
-         <?php
             if(strpos($_SERVER['REQUEST_URI'], "/~webserver/alaina/") !== false)
                echo " style='
                 display: block;
@@ -101,5 +89,17 @@
                 color:#333333; 
                 background:#dddddd;'";
          ?> href="/~webserver/contact/index.php">Contact</a></li>
+         <li><a 
+         <?php
+            if(strpos($_SERVER['REQUEST_URI'], "/~webserver/php/logout.php") !== false)
+               echo " style='
+                display: block;
+                float: left;
+                padding: 5px 25px;
+                text-decoration: none;
+                border-left: 5px solid#004488; /*dark gray*/
+                color:#333333; 
+                background:#dddddd;'";
+         ?> href="/~webserver/php/logout.php">Logout</a></li>
       </ul>
     </div>
