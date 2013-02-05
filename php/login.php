@@ -26,10 +26,7 @@
                exit; 
             } else if (isset($_COOKIE['logindata'])) {
                //database variables for login
-               $mySQL_loc = "localhost";
-               $mySQL_usr = "root";
-               $mySQL_pwd = "bethlehood";
-               $mySQL_db  = "webserver";
+               include($dir_inc."mySQLconfig.php");
                //connect to the MySQL server
                mysql_connect($mySQL_loc, $mySQL_usr, $mySQL_pwd) or die(mysql_error());
                //select database
@@ -88,10 +85,7 @@
                } else {
                   
                   //database variables for login
-                  $mySQL_loc = "localhost";
-                  $mySQL_usr = "root";
-                  $mySQL_pwd = "bethlehood";
-                  $mySQL_db  = "webserver";
+                  include($dir_inc."mySQLconfig.php");
                   //connect to the MySQL server
                   mysql_connect($mySQL_loc, $mySQL_usr, $mySQL_pwd) or die(mysql_error());
                   //select database
