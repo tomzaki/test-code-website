@@ -25,7 +25,10 @@ Mucking around with web programming
 TODO:
 -----
 
-- [ ] debugging php login script, look for obvious holes
-- [ ] write mail function to simplify sending mail from pages
-- [ ] add forgot password tool (via email) to login page
-- [ ] research usort() bug in resistor gain tool
+ - Debugging php login script, look for obvious holes
+ 
+ - Write mail function to simplify sending mail from pages
+ 
+ - Add forgot password tool (via email) to login page
+ 
+ - Research usort() bug in resistor gain tool
