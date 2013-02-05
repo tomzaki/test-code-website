@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
-<?php //php setup 
-   include("/home/webserver/public_html/checklogin.php");
+<?php //php setup and dircetory for header and footer import
+   $dir_inc = "../include/";
+   include($dir_inc."phpheader.php");
 ?>
 
 <?php //MySQL setup

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <?php 
-   include("/home/webserver/public_html/checklogin.php"); 
+   $dir_inc = "../include/"; 
+   include($dir_inc."phpheader.php");  
 ?>
 
 <html lang='en'>
