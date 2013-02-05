@@ -87,7 +87,7 @@
                   //database variables for login
                   include($dir_inc."mySQLconfig.php");
                   //connect to the MySQL server
-                  mysql_connect($mySQL_loc, $mySQL_usr, $mySQL_pwd) or die(mysql_error());
+                  mysql_connect($mySQL_loc, $mySQL_usr, $mySQL_pwd) or die("womp<br><br>".mysql_error());
                   //select database
                   mysql_select_db($mySQL_db) or die(mysql_error());
                
