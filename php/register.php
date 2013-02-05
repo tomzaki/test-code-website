@@ -41,6 +41,9 @@
                   $email = mysql_real_escape_string($_POST["email"]);
                   $password = hash("sha256", $_POST["password"]);
                   
+                  //$$$ todo: set up email verification of account creation,
+                  //    related: forgot password tool via email
+                  
                   $sql = "SELECT id FROM members WHERE username = '$username'";
                   $result = mysql_query($sql) or die(mysql_error());
                

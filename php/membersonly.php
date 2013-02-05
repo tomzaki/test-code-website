@@ -3,7 +3,7 @@
 <?php //php setup and dircetory for header and footer import
    $dir_inc = "../include/";
    include($dir_inc."phpheader.php");
-   include($dir_inc."checklogin.php");
+   include($dir_inc."checklogin.php"); // add this to make mage secure
 ?>
 
 <html lang='en'>
@@ -17,7 +17,9 @@
    <body>
       <?php include($dir_inc."header.php"); ?>
       <div id="content">
-         YOU MADE IT INSIDE. WOO!
+         YOU MADE IT INSIDE. WOO!<br><br>
+         You will be logged out at <?echo($_COOKIE['loginexpire']); ?><br><br>
+         <a href="logout.php">Logout</a>
       </div>
       <?php include($dir_inc."footer.php"); ?>
    </body>

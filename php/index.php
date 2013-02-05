@@ -23,6 +23,8 @@
             <li><a href="phpmyadmin/index.php">PHPMyAdmin</a></li>
             <li><a href="resistorcalc.php">Resistor Gain Tool</a></li>
          </ul>
+         <br><br><br>
+         <a href="logout.php">Logout</a>
       </div>
       <?php include($dir_inc."footer.php"); ?>
    </body>
