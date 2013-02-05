@@ -7,6 +7,7 @@
 
 <?php //MySQL setup
    include($dir_inc."mySQLconfig.php");
+   $mySQL_db  = "test";
    //connect to the MySQL server
    mysql_connect($mySQL_loc, $mySQL_usr, $mySQL_pwd) or die(mysql_error());
    //select database
