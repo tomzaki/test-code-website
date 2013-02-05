@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <?php 
-   $dir_inc = "../include/";
-   include($dir_inc."phpheader.php");
+   include("/home/webserver/public_html/checklogin.php");
 ?>
 
 <?php //MySQL setup

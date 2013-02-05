@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <?php 
-   $dir_inc = "../include/";
-   include($dir_inc."phpheader.php");
+   include("/home/webserver/public_html/checklogin.php");
 ?>
 
 <html lang='en'>
@@ -17,6 +16,7 @@
       <?php include($dir_inc."header.php"); ?>
       <div id="content">
          <ul>
+            <li><a href="login.php">Login</a></li>
             <li><a href="form.php">PHP Form</a></li>
             <li><a href="test.php">PHP Info</a></li>
             <li><a href="phpmyadmin/index.php">PHPMyAdmin</a></li>

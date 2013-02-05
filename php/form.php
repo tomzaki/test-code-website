@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <?php 
-   $dir_inc = "../include/"; 
-   include($dir_inc."phpheader.php");  
+   include("/home/webserver/public_html/checklogin.php");  
 ?>
 
 <html lang='en'>
@@ -43,6 +42,8 @@
             Password: <input type="password" name="password"><br>      
             <input type="submit" name="logged_in" value="Login">
          </form>
+         <br><br>
+         <a href="login.php">REAL LOGIN</a>
       </div>
       <?php include($dir_inc."footer.php"); ?>
    </body>  

@@ -22,14 +22,10 @@
          <br>Below are some broken links to old pages that have been moved
              or no longer exist. You will find little enjoyment from them.</h4>
          <ul>
-            <li><a href="/~webserver/awesome/index.html">Awesome</a></li>
             <li><a href="/~webserver/awesome/cats.html">Cats</a></li>
-            <li><a href="/~webserver/awesome/morecats.html">More Cats</a></li>
-            <li><a href="/~webserver/php_test/test.php">PHP Info</a></li>
-            <li><a href="/~webserver/php_test/form.php">PHP Form Test</a></li>
-            <li><a href="/~webserver/phpmyadmin/index.php">PHPMyAdmin</a></li>            
+            <li><a href="/~webserver/awesome/morecats.html">More Cats</a></li>         
             <li><a href="http://www.tomzaki.com">tomzaki</a></li>            
-            <li><a href="http://64.121.112.21:8082/~public">downloads</a></li>
+            <li><a href="http://download.tomzaki.com">downloads</a></li>
          </ul>	
          <?php
             //Check to see if magic quotes are enabled
