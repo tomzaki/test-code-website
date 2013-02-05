@@ -91,7 +91,8 @@
          ?> href="/~webserver/contact/index.php">Contact</a></li>
          <li><a 
          <?php
-            if(strpos($_SERVER['REQUEST_URI'], "/~webserver/php/logout.php") !== false)
+            $inout = isset($_SESSION['loggedin']);
+            if(strpos($_SERVER['REQUEST_URI'], "/~webserver/php/".($inout ? "login" : "logout").".php") !== false)
                echo " style='
                 display: block;
                 float: left;
@@ -100,6 +101,6 @@
                 border-left: 5px solid#004488; /*dark gray*/
                 color:#333333; 
                 background:#dddddd;'";
-         ?> href="/~webserver/php/logout.php">Logout</a></li>
+         ?> href="/~webserver/php/<?php echo($inout ? "logout" : "login")?>.php"><?php echo($inout ? "Log Out" : "Log In")?></a></li>
       </ul>
     </div>
