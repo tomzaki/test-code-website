@@ -31,4 +31,6 @@ TODO:
  
  - Add forgot password tool (via email) to login page
  
+ - Add email verification tool for new users
+ 
  - Research usort() bug in resistor gain tool
